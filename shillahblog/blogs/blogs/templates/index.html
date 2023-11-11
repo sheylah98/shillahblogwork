@@ -1,0 +1,8 @@
+{% extend './base.html' %}
+{% block content %}
+        <h1>Welcome  to my Blog</h1>
+        <h2>This is my first django App page</h2>
+        <a href="{% url 'blog_list_page' %}">Blog List</a>
+        <a href="{% url 'add_author_page' %}">Add Author</a>
+        <a href="{% url 'sign_up_page' %}"Sign Up</a>
+{% endblock content %}
